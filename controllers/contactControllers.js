@@ -61,11 +61,3 @@ export const deleteContact = asyncHandler(async (req, res) => {
   await Contact.deleteOne({ _id: req.params.id });
   res.status(200).json(contact);
 });
-
-// module.exports = {
-//   getContacts,
-//   createContact,
-//   getContact,
-//   updateContact,
-//   deleteContact,
-// };
